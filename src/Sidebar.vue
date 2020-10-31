@@ -120,9 +120,9 @@ export default {
 }
 .trend h2{
     font-size: 18px;
+    font-weight: 900;
 }
 .trend span{
-    opacity: 50%;
     font-size: 15px;
     margin: 5px 0;
 }

@@ -75,9 +75,6 @@ export default {
   font-weight: 900;
   font-size: 18px;
 }
-.bio span{
-    opacity: 40%;
-}
 .bio p{
     margin-top: 10px;
 }
