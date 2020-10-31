@@ -1,5 +1,6 @@
 <template>
-  <div class="app" :class="{dark: dark}" @click="dark = !dark">
+  <div class="app" :class="{dark: dark}">
+    <div class="div"  @click="dark = !dark">toogle</div>
     <Menu class="menu" />
     <router-view class="router"></router-view>
     <Side class="side" />
@@ -71,14 +72,20 @@ body.dark{
   grid-column: 2/3;
   border-right: 1px solid var(--border);
   min-height: 100vh;
-
-
-
 }
 .side{
   grid-area: 'side';
+}
 
-  
+.div{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 1000px;
+  padding: 10px;
+  background: var(--primary);
+  color: white;
+  cursor: pointer;
 }
 @media (max-width: 1250px){
   .app{
@@ -89,6 +96,7 @@ body.dark{
   .menu{
     width: 90px;
   }
+
 }
 @media (max-width: 1000px) {
   .app{

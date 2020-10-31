@@ -67,6 +67,9 @@ export default {
 </script>
 
 <style scoped>
+.notif{
+  color: var(--black)
+}
 .top{
   border-bottom: 1px solid var(--border);
   padding: 20px;
