@@ -1,5 +1,5 @@
 <template>
-  <div class="app">
+  <div class="app" :class="{dark: dark}" @click="dark = !dark">
     <Menu class="menu" />
     <router-view class="router"></router-view>
     <Side class="side" />
@@ -7,6 +7,8 @@
 </template>
 
 <script>
+import {ref} from 'vue'
+
 import Menu from './Menu.vue'
 import Side from './Sidebar.vue'
 
@@ -15,6 +17,13 @@ export default {
   components: {
     Menu,
     Side
+  },
+  setup(){
+    const dark = ref(false)
+
+    return{
+      dark
+    }
   }
 }
 </script>
