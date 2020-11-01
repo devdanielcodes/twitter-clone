@@ -199,7 +199,7 @@ textarea::-webkit-scrollbar{
 .tweet .act{
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 90%;
   margin-top: 15px;
   fill: var(--black);
 }
